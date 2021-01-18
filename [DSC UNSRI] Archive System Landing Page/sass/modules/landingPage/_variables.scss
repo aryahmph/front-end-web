@@ -1,0 +1,17 @@
+// Size
+$medium : 900px;
+$large : 1400px;
+
+// Font
+@font-face {
+  font-family: 'Google Sans', sans-serif;
+  src: url(../../../font/GoogleSans/GoogleSans-Regular-v1.27.ttf) format(truetype), url(../../../font/GoogleSans/GoogleSans-Medium-v1.27.ttf) format(truetype),url(../../../font/GoogleSans/GoogleSans-Bold-v1.27.ttf) format(truetype),;
+}
+$roboto : 'Roboto', sans-serif;
+$google-sans : 'Google Sans', sans-serif;
+
+
+
+// Color
+$light-color : #999999;
+$blackLight-color: #757575;

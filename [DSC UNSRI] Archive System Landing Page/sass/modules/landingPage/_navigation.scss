@@ -1,0 +1,78 @@
+@use 'mixin';
+@use 'variables' as var;
+
+.nav {
+  @include mixin.position(2);
+  @include mixin.flex-box;
+  width: 100vw;
+  height: 80px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 22px 9px rgba($color: #000000, $alpha: 0.05);
+  font-family: var.$google-sans;
+
+  .container {
+    @include mixin.flex-box(space-between);
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  &-logo img{
+    width: 294px;
+    height: 53px;
+
+    @media screen and (max-width : var.$large) {
+      width: 248px;
+      height: 45px;
+    }
+  }
+
+  &-bar {
+    @include mixin.flex-box;
+    ul {
+        @include mixin.flex-box;
+        li {
+          margin-right: 100px;
+
+          @media screen and (max-width : var.$large) {
+            font-size: 18px;
+            margin-right: 80px;
+          }
+
+          a {
+            text-decoration: none;
+            color: var.$light-color;
+          }
+
+          &:hover  a{
+            color: var.$blackLight-color;
+          }
+        }
+        
+    }
+
+    form {
+      margin-left: 60px;
+      @media screen and (max-width : var.$large) {
+        margin-left: 40px;
+      }
+    }
+    button {
+      @include mixin.flex-box;
+      @include mixin.button(200px, 69px);
+      margin: 0 auto;
+      font-size: 20px;
+      border: none;
+      border-radius: 30px;
+
+      p {
+        margin-left: 15px;
+        font-weight: 500;
+        color: var.$blackLight-color;
+      }
+    }
+    .active {
+      color: var.$blackLight-color;
+      font-weight: 700;
+    }
+  }
+}

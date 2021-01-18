@@ -1,0 +1,85 @@
+@use 'mixin';
+@use 'variables' as var;
+
+.hero {
+  @include mixin.flex-box;
+  @include mixin.position(1);
+
+  margin: 0 auto;
+  &-bg {
+    @include mixin.position(1,absolute);
+    top: 0;
+    right: 0;
+    img {
+      @media screen and (max-width : var.$large) {
+        width: 1195.21px;
+        height: 750.09px;
+      }
+    }
+  }
+
+  .container {
+    width: 90vw;
+    @include mixin.position(2, absolute);
+  }
+
+  &-main {
+    @include mixin.flex-box(flex-start);
+    flex-direction: column;
+    margin-top: 570px;
+
+    &-txt {
+      width: 80vw;
+      
+      @media screen and (max-width : var.$large) {
+        width: 82vw;
+      }
+
+      h1 {
+        width: 30vw;
+        font-size: 72px;
+        font-weight: 500;
+        color: #242423;
+
+        @media screen and (max-width : var.$large) {
+          width: 28vw;
+          font-size: 50px;
+        }
+        
+      }
+      p {
+        width: 32vw;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 22px;
+        color: var.$blackLight-color;
+
+        @media screen and (max-width : var.$large) {
+          width: 28vw;
+          font-size: 18px;
+        }
+      }
+    }
+
+    button {
+      @include mixin.button(220px,55px,#EA4335);
+      font-size: 20px;
+      font-weight: 500;
+      color: white;
+      border-radius: 30px;
+
+      transition: .5s;
+
+      @media screen and (max-width : var.$large) {
+        width: 200px;
+        height: 48px;
+        font-size: 18px;
+      }
+
+      &:hover {
+        box-shadow: 0 5px 20px rgba($color: #000000, $alpha: .2);
+      }
+    }
+
+  }
+}

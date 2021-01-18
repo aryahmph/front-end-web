@@ -1,0 +1,18 @@
+@mixin flex-box ($justify : center, $align : center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin position ($z, $pos : relative) {
+  position: $pos;
+  z-index: $z;
+}
+
+@mixin button ($width, $height, $bg-col : white) {
+  border: none;
+  width: $width;
+  height: $height;
+  cursor: pointer;
+  background-color: $bg-col;
+}
