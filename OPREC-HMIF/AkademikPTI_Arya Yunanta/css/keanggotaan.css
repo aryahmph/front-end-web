@@ -1,0 +1,82 @@
+body {
+  height: 400vh;
+}
+.banner {
+  height: 43em;
+  background-image: url(../img/keanggotaan/banner.jpg);
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+.banner::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to top, rgb(14, 24, 39), rgba(14, 24, 39, 0));
+}
+
+/* Heading TEXT */
+.heading-txt {
+  text-align: center;
+  margin-top: 6em;
+}
+.heading-txt h1 {
+  font-weight: 800;
+}
+.heading-txt p {
+  font-size: 1.2rem;
+  color: #3c3c3c;
+}
+
+/* Visi Misi */
+.visi-misi {
+  margin: 8em auto;
+}
+.visi-misi h3 {
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+.visi-misi p {
+  font-size: 1.1rem;
+  color: #3c3c3c;
+}
+.visi-misi .row {
+  margin-bottom: 10em;
+}
+
+/* Struktur */
+.struktur {
+  padding-bottom: 10em;
+  color: white;
+  text-align: center;
+  background-color: #173f5f;
+}
+.struktur-heading {
+  padding-top: 5em;
+  margin-bottom: 5em;
+}
+.struktur-heading h2 {
+  font-weight: 600;
+}
+
+.struktur {
+  color: rgb(226, 237, 245);
+}
+.struktur h4 {
+  font-weight: 600;
+}
+
+.pimpinan {
+  margin-bottom: 8em;
+}
+
+.staff h2 {
+  font-weight: 700;
+  margin-bottom: 2em;
+}
+.staff h5 {
+  font-weight: 600;
+}
